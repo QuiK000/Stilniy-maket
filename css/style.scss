@@ -1,0 +1,103 @@
+@import "_normalize.scss";
+
+.header{
+  margin-top: 50px;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__logo{
+
+  }
+
+  &__menu{
+    align-self: center;
+
+    &-font{
+      font-family: 'Nunito', sans-serif;
+    }
+
+    &-nav{
+      cursor: pointer;
+      &-ul{
+        display: flex;
+      }
+      li{
+        margin: 0 60px;
+      }
+
+      &-links{
+        font-size: 20px;
+        color: #bab8b8;
+        transition: .3s;
+        &:hover{
+          color: #3984f3;
+        }
+      }
+
+      &-btn{
+        font-size: 20px;
+        color: #3984f3;
+        font-weight: 600;
+        border: 3px solid #3984f3;
+        padding: 16px 45px;
+      }
+    }
+
+  }
+
+}
+
+.main{
+  margin-top: 100px;
+
+  &__left-content{
+    margin-top: 215px;
+    font-family: 'Nunito', sans-serif;
+
+    &-title{
+      max-width: 580px;
+      &-text{
+        font-weight: 800;
+        font-size: 75px;
+        color: #091e40;
+      }
+    }
+
+    &-description{
+      margin-top: 75px;
+      max-width: 455px;
+      &-text{
+        font-size: 22px;
+        color: #81858e;
+      }
+    }
+
+    &-button{
+      margin-top: 95px;
+      &-btn{
+        background: #3984f3;
+        padding: 20px 45px;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 20px;
+      }
+    }
+
+  }
+
+  &__right-content{
+    background: url('../images/main-bg.png') no-repeat center;
+    background-size: 100%;
+    width: 1035px;
+    height: 940px;
+    position: relative;
+    left: 79px;
+  }
+
+}
